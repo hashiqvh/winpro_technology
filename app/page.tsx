@@ -197,30 +197,18 @@ export default function Home() {
 
       {/* CTA strip */}
       <section className="ctaStrip" aria-label="Start a project">
+        <div className="ctaGrid" aria-hidden="true">{Array.from({length:48}).map((_,i)=><span key={i}/>)}</div>
         <div className="ctaGlow" aria-hidden="true" />
-        <div className="ctaStripBody shell">
-          <div className="ctaStripLeft">
-            <p className="ctaStripEyebrow">Ready to move?</p>
-            <h2 className="ctaStripBig">Let&apos;s build<br /><em>together.</em></h2>
-            <p className="ctaStripSub">Tell us what you&apos;re building — we&apos;ll tell you how we&apos;d approach it. No commitment, no sales pitch.</p>
-          </div>
-          <div className="ctaStripRight">
-            <a className="ctaEmailBlock" href="mailto:support@winprofx.com">
-              <span className="ctaEmailLabel">Drop us a line</span>
-              <span className="ctaEmailAddress">support@winprofx.com</span>
-              <span className="ctaEmailArrow" aria-hidden="true">&#8599;</span>
-            </a>
-            <div className="ctaContactRow">
-              <a className="ctaContactItem" href="tel:+97144471894">
-                <span className="ctaContactType">Phone</span>
-                <span>+971 4 447 1894</span>
-              </a>
-              <a className="ctaContactItem" href="https://wa.me/97144471894" target="_blank" rel="noopener noreferrer">
-                <span className="ctaContactType">WhatsApp</span>
-                <span>+971 4 447 1894</span>
-              </a>
-            </div>
-            <a className="secondaryButton ctaAboutLink" href="/about">Learn about us &#8594;</a>
+        <div className="ctaContent shell">
+          <p className="ctaStripEyebrow">Ready to move?</p>
+          <h2 className="ctaStripBig">Start with<br /><em>one message.</em></h2>
+          <a className="ctaBigEmail" href="mailto:support@winprofx.com">
+            support@winprofx.com
+            <span className="ctaBigEmailArrow" aria-hidden="true">&#8599;</span>
+          </a>
+          <div className="ctaActions">
+            <a className="primaryButton" href="mailto:support@winprofx.com">Send us an email <span aria-hidden="true">&#8594;</span></a>
+            <a className="ctaPhoneLink" href="tel:+97144471894">or call +971 4 447 1894</a>
           </div>
         </div>
       </section>
