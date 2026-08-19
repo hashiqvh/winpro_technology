@@ -77,10 +77,6 @@ export default function Footer() {
               <a className="footerColLink" href="tel:+97144471894">+971 4 447 1894</a>
             </li>
             <li>
-              <span className="footerContactMeta">WhatsApp</span>
-              <a className="footerColLink" href="https://wa.me/97144471894" target="_blank" rel="noopener noreferrer">+971 4 447 1894</a>
-            </li>
-            <li>
               <span className="footerContactMeta">Office</span>
               <address className="footerAddress">Trade Centre 1,<br />Dubai, UAE</address>
             </li>
