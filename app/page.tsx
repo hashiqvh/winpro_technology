@@ -5,7 +5,10 @@ export default function Home() {
     <main>
       <header className="nav shell">
         <a className="brand" href="#top" aria-label="WINPRO TECHNOLOGY home"><img src="/logo.png" alt="" className="brandMark" aria-hidden="true" /><span>WINPRO <b>TECHNOLOGY</b></span></a>
-        <a className="navLink" href="mailto:support@winprofx.com">Contact us <span aria-hidden="true">&#8599;</span></a>
+        <nav className="navLinks">
+          <a className="navLink" href="/services">Services</a>
+          <a className="navLink" href="mailto:support@winprofx.com">Contact us <span aria-hidden="true">&#8599;</span></a>
+        </nav>
       </header>
       <section className="hero shell" id="top">
         <div className="eyebrow"><span /> Technology for what&apos;s next</div>
