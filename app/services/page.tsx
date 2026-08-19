@@ -70,7 +70,7 @@ export default function ServicesPage() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <a className="svcCta" href="mailto:support@winprofx.com">
+            <a className="svcCta" href={`/contact?service=${encodeURIComponent(cat.title)}`}>
               Get a quote <span aria-hidden="true">&#8594;</span>
             </a>
           </article>
@@ -80,7 +80,7 @@ export default function ServicesPage() {
       <section className="svcCtaSection shell">
         <p className="svcCtaEyebrow">Ready to start?</p>
         <h2 className="svcCtaHeading">Let&apos;s build something great together.</h2>
-        <a className="primaryButton" href="mailto:support@winprofx.com">
+        <a className="primaryButton" href="/contact">
           Start a conversation <span aria-hidden="true">&#8594;</span>
         </a>
       </section>
