@@ -78,7 +78,7 @@ export default function Footer() {
             </li>
             <li>
               <span className="footerContactMeta">Office</span>
-              <address className="footerAddress">Trade Centre 1,<br />Dubai, UAE</address>
+              <address className="footerAddress">Office No. 1003, Naseema Tower<br />Trade Centre 1, Dubai, UAE</address>
             </li>
           </ul>
         </div>
