@@ -196,17 +196,32 @@ export default function Home() {
       </section>
 
       {/* CTA strip */}
-      <section className="ctaStrip shell">
-        <div className="ctaStripInner">
-          <p className="ctaStripLabel">Ready to move?</p>
-          <h2 className="ctaStripHeading">Your next product<br />starts with one email.</h2>
-          <div className="ctaStripActions">
-            <a className="primaryButton" href="mailto:support@winprofx.com">support@winprofx.com <span aria-hidden="true">&#8594;</span></a>
-            <a className="secondaryButton" href="/about">Learn about us</a>
+      <section className="ctaStrip" aria-label="Start a project">
+        <div className="ctaGlow" aria-hidden="true" />
+        <div className="ctaStripBody shell">
+          <div className="ctaStripLeft">
+            <p className="ctaStripEyebrow">Ready to move?</p>
+            <h2 className="ctaStripBig">Let&apos;s build<br /><em>together.</em></h2>
+            <p className="ctaStripSub">Tell us what you&apos;re building — we&apos;ll tell you how we&apos;d approach it. No commitment, no sales pitch.</p>
           </div>
-        </div>
-        <div className="ctaStripDeco" aria-hidden="true">
-          <span className="ctaDecoLine" /><span className="ctaDecoLine" /><span className="ctaDecoLine" />
+          <div className="ctaStripRight">
+            <a className="ctaEmailBlock" href="mailto:support@winprofx.com">
+              <span className="ctaEmailLabel">Drop us a line</span>
+              <span className="ctaEmailAddress">support@winprofx.com</span>
+              <span className="ctaEmailArrow" aria-hidden="true">&#8599;</span>
+            </a>
+            <div className="ctaContactRow">
+              <a className="ctaContactItem" href="tel:+97144471894">
+                <span className="ctaContactType">Phone</span>
+                <span>+971 4 447 1894</span>
+              </a>
+              <a className="ctaContactItem" href="https://wa.me/97144471894" target="_blank" rel="noopener noreferrer">
+                <span className="ctaContactType">WhatsApp</span>
+                <span>+971 4 447 1894</span>
+              </a>
+            </div>
+            <a className="secondaryButton ctaAboutLink" href="/about">Learn about us &#8594;</a>
+          </div>
         </div>
       </section>
 
