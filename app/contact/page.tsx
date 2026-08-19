@@ -116,10 +116,8 @@ export default function ContactPage() {
           <div className="eyebrow"><span /> Our office</div>
           <h2 className="abtH2">Dubai, UAE.</h2>
           <address className="ctcAddressBlock">
-            Office No. 1003<br />
-            Naseema Tower Investment L.L.C.<br />
-            Trade Centre 1<br />
-            Dubai, United Arab Emirates
+            Trade Centre 1,<br />
+            Dubai, UAE
           </address>
           <p className="ctcOfficeNote">We work with clients globally. Remote collaboration is no problem.</p>
         </div>
