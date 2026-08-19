@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Services — WINPRO TECHNOLOGY",
@@ -47,16 +49,7 @@ const categories = [
 export default function ServicesPage() {
   return (
     <main>
-      <header className="nav shell">
-        <a className="brand" href="/" aria-label="WINPRO TECHNOLOGY home">
-          <img src="/logo.png" alt="" className="brandMark" aria-hidden="true" />
-          <span>WINPRO <b>TECHNOLOGY</b></span>
-        </a>
-        <nav className="navLinks">
-          <a className="navLink navLinkActive" href="/services">Services</a>
-          <a className="navLink" href="mailto:support@winprofx.com">Contact us <span aria-hidden="true">&#8599;</span></a>
-        </nav>
-      </header>
+      <Nav active="services" />
 
       <section className="svcHero shell">
         <div className="eyebrow"><span /> What we build</div>
@@ -92,32 +85,7 @@ export default function ServicesPage() {
         </a>
       </section>
 
-      <footer>
-        <div className="footerTop shell">
-          <div>
-            <span className="footerLabel">Let&apos;s work together</span>
-            <a className="footerEmail" href="mailto:support@winprofx.com">support@winprofx.com</a>
-          </div>
-          <div className="footerContacts">
-            <div>
-              <span className="footerLabel">Phone</span>
-              <a className="footerContact" href="tel:+97144471894">+971 4 447 1894</a>
-            </div>
-            <div>
-              <span className="footerLabel">WhatsApp</span>
-              <a className="footerContact" href="https://wa.me/97144471894" target="_blank" rel="noopener noreferrer">+971 4 447 1894</a>
-            </div>
-            <address>
-              <span className="footerLabel">Office</span>
-              Office No. 1003, owned by Naseema Tower Investment L.L.C.<br />Trade Centre 1, Dubai, UAE
-            </address>
-          </div>
-        </div>
-        <div className="footerBottom shell">
-          <span>© 2026 WINPRO TECHNOLOGY</span>
-          <span>Designed for progress.</span>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
